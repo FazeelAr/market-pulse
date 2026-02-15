@@ -1,0 +1,4 @@
+.venv
+.claude
+index.js
+/frontend-main/node_modules

@@ -1,0 +1,60 @@
+{
+  "uploads": [
+    {
+      "id": 7,
+      "filename": "Color today.xlsx",
+      "uploaded_by": "admin",
+      "upload_time": "2026-02-02T23:15:24.735339",
+      "status": "success",
+      "rows_uploaded": 50,
+      "processing_type": "MANUAL",
+      "message": "Processed in scheduled run",
+      "processing_time": "2026-02-02T23:16:00.639275",
+      "duration_seconds": 0.608635,
+      "rows_processed": 50,
+      "rows_valid": 50
+    },
+    {
+      "id": 6,
+      "filename": "Color today.xlsx",
+      "uploaded_by": "admin",
+      "upload_time": "2026-02-02T18:01:10.398200",
+      "status": "success",
+      "rows_uploaded": 50,
+      "processing_type": "MANUAL",
+      "message": "Processed in scheduled run",
+      "processing_time": "2026-02-02T20:36:42.716942",
+      "duration_seconds": 0.617089,
+      "rows_processed": 50,
+      "rows_valid": 50
+    },
+    {
+      "id": 5,
+      "filename": "Color today.xlsx",
+      "uploaded_by": "admin",
+      "upload_time": "2026-02-02T15:52:27.190777",
+      "status": "success",
+      "rows_uploaded": 50,
+      "processing_type": "MANUAL",
+      "message": "Processed in scheduled run",
+      "processing_time": "2026-02-02T15:54:00.175042",
+      "duration_seconds": 0.144502,
+      "rows_processed": 50,
+      "rows_valid": 50
+    },
+    {
+      "id": 4,
+      "filename": "Color today.xlsx",
+      "uploaded_by": "admin",
+      "upload_time": "2026-02-01T15:20:07.785567",
+      "status": "success",
+      "rows_uploaded": 5213,
+      "processing_type": "MANUAL",
+      "message": "Processed in scheduled run",
+      "processing_time": "2026-02-01T15:24:12.355512",
+      "duration_seconds": 132.328979,
+      "rows_processed": 5213,
+      "rows_valid": 5213
+    }
+  ]
+}
