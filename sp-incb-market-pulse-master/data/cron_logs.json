@@ -1,0 +1,17 @@
+{
+  "logs": [
+    {
+      "job_id": 2,
+      "job_name": "2nd",
+      "triggered_by": "scheduled",
+      "start_time": "2026-02-16T18:30:00.108927",
+      "status": "failed",
+      "end_time": "2026-02-16T18:30:00.130866",
+      "duration_seconds": 0.021939,
+      "error": "Excel file not found: E:\\Web\\marketPUlse\\Market-pulse\\sp-incb-market-pulse-master\\Color today.xlsx",
+      "manual_files_processed": 0,
+      "manual_files_failed": 0,
+      "id": 1
+    }
+  ]
+}

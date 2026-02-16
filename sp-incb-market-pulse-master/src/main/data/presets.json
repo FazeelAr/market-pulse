@@ -2,9 +2,10 @@
   {
     "id": 5,
     "name": "new3",
-    "description": "",
+    "description": "my preset",
     "conditions": [
       {
+        "type": "where",
         "column": "PX",
         "operator": "equal to",
         "value": "100"
@@ -12,7 +13,7 @@
     ],
     "created_at": "2026-02-02T18:25:43.100791",
     "created_by": "admin",
-    "updated_at": "2026-02-02T18:25:43.100800"
+    "updated_at": "2026-02-16T18:00:09.415710"
   },
   {
     "id": 6,
