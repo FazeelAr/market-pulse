@@ -138,15 +138,21 @@
       "description": "CLO Securities",
       "sub_clos": [
         {
-          "id": "CLO_US_CLO",
-          "name": "US CLO",
-          "display_name": "US CLO",
+          "id": "CLO_US_BSL_CLO",
+          "name": "US BSL CLO",
+          "display_name": "US BSL CLO",
           "parent_clo_id": "CLO"
         },
         {
-          "id": "CLO_EUROPE_CLO",
-          "name": "Europe CLO",
-          "display_name": "Europe CLO",
+          "id": "CLO_US_MM_CLO",
+          "name": "US MM CLO",
+          "display_name": "US MM CLO",
+          "parent_clo_id": "CLO"
+        },
+        {
+          "id": "CLO_EURO_CLO",
+          "name": "Euro CLO",
+          "display_name": "Euro CLO",
           "parent_clo_id": "CLO"
         }
       ]

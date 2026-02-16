@@ -92,7 +92,7 @@ async def get_clo_mapping(clo_id: str):
     Returns full column details (visible/hidden) for a CLO type.
     
     **Args:**
-    - `clo_id`: CLO identifier (e.g., 'EURO_ABS', 'CLO_US_CLO')
+    - `clo_id`: CLO identifier (e.g., 'EURO_ABS', 'CLO_US_BSL_CLO')
     
     **Returns:**
     ```json

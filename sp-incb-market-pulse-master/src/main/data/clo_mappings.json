@@ -618,7 +618,7 @@
       "updated_at": "2026-02-02T02:25:06.091482"
     },
     {
-      "clo_id": "CLO_US_CLO",
+      "clo_id": "CLO_US_BSL_CLO",
       "clo_type": "sub",
       "parent_clo_id": "CLO",
       "visible_columns": [
@@ -646,7 +646,35 @@
       "updated_at": "2026-02-02T02:25:06.091489"
     },
     {
-      "clo_id": "CLO_EUROPE_CLO",
+      "clo_id": "CLO_US_MM_CLO",
+      "clo_type": "sub",
+      "parent_clo_id": "CLO",
+      "visible_columns": [
+        "MESSAGE_ID",
+        "TICKER",
+        "SECTOR",
+        "CUSIP",
+        "DATE",
+        "PRICE_LEVEL",
+        "BID",
+        "ASK",
+        "PX",
+        "SOURCE",
+        "BIAS",
+        "RANK",
+        "COV_PRICE",
+        "PERCENT_DIFF",
+        "PRICE_DIFF",
+        "CONFIDENCE",
+        "DATE_1",
+        "DIFF_STATUS"
+      ],
+      "hidden_columns": [],
+      "updated_by": "system",
+      "updated_at": "2026-02-02T02:25:06.091491"
+    },
+    {
+      "clo_id": "CLO_EURO_CLO",
       "clo_type": "sub",
       "parent_clo_id": "CLO",
       "visible_columns": [
