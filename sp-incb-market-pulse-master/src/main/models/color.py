@@ -144,7 +144,7 @@ class MonthlyStats(BaseModel):
     """
     month: str = Field(..., description="Month in YYYY-MM format")
     count: int = Field(..., description="Number of colors received")
-    
+
     class Config:
         json_schema_extra = {
             "example": {

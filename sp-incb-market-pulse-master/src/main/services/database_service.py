@@ -215,10 +215,10 @@ class DatabaseService:
         """
         Get color count by month for dashboard chart from PROCESSED output data
         Reads from configured destination (local Excel or S3)
-        
+
         Args:
             months: Number of months to look back
-            
+
         Returns:
             List of {"month": "2026-01", "count": 1234}
         """
@@ -226,30 +226,30 @@ class DatabaseService:
             # Read from PROCESSED data (using abstraction for local or S3)
             from services.processed_data_reader import get_processed_data_reader
             reader = get_processed_data_reader()
-            
+
             # Read ALL processed colors to count by month
             df_output = reader.read_processed_data()
-            
+
             if len(df_output) == 0:
                 logger.warning("No data in processed output for monthly stats")
                 return []
-            
+
             logger.info(f"Computing monthly stats from {len(df_output)} processed records")
-            
+
             # Use PROCESSED_AT or DATE column for grouping
             date_column = 'PROCESSED_AT' if 'PROCESSED_AT' in df_output.columns else 'DATE'
-            
+
             # Convert to datetime and extract month
             df_output['month'] = pd.to_datetime(df_output[date_column], errors='coerce').dt.strftime('%Y-%m')
-            
+
             # Group by month and count
             monthly_counts = df_output.groupby('month').size().reset_index(name='count')
             monthly_counts = monthly_counts.sort_values('month')
-            
+
             # Get last N months
             if len(monthly_counts) > months:
                 monthly_counts = monthly_counts.tail(months)
-            
+
             # Convert to list of dicts
             result = []
             for _, row in monthly_counts.iterrows():
@@ -258,10 +258,10 @@ class DatabaseService:
                         "month": str(row['month']),
                         "count": int(row['count'])
                     })
-            
+
             logger.info(f"Returning {len(result)} months of stats")
             return result
-            
+
         except Exception as e:
             logger.error(f"Error computing monthly stats: {e}")
             return []
